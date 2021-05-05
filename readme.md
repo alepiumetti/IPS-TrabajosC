@@ -71,4 +71,4 @@ Ejemplo n=1, p=4, m=21, debe generarse 1,5,9,13,17,21
 5. Permita ingresar una matriz cuadrada 4x4 y luego la muestre por pantalla.
 6. Empleando bucles for anidados intente generar las siguientes salidas por pantalla
 
-![salida por consola](https://prnt.sc/12ixin1)
+https://prnt.sc/12ixin1
