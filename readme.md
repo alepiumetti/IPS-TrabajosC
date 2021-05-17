@@ -2,7 +2,6 @@
 
 Resolución de los ejercicios planteados en Taller de Programación 1 de la carrera Analista Universitario en Sistemas del instituto Politécnico Superior San Martín. 
 
-
 ## División del código:
 
 Cada ejercicio está dividido en sus carpetas dependiendo del tema y dentro de cada tema están los niveles y dentro los ejercicios.
@@ -27,10 +26,7 @@ gcc -o main main.c && ./main
 
 Lo que hace este comando es compilar el archivo main.c en el archivo main y lo ejecuta. 
 
-
-___
-
-
+## Ejercicios
 
 ### MACROS - BATERÍA DE EJERCICIOS:
 
@@ -60,11 +56,9 @@ Escriban macros para determinar:
 6. Determinar si dos números son consecutivos, (5 y 4 o 33 y 34 lo son, pero 40 y 42 o bien 8 y 91 no lo son)
 #define CONSECUTIVOS(X,Y) .....siguen uds.....
 
-
 #### Nivel 3:
 7. Determinar el máximo entre tres enteros
 #define MAX(X,Y,Z) .....siguen uds.....
-
 ___
 
 ## BUCLES
