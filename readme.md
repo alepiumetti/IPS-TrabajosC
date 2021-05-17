@@ -1,4 +1,35 @@
-## Ejercitación IPS - Taller de programación 1. 
+# Ejercitación IPS - Taller de programación 1.
+
+Resolución de los ejercicios planteados en Taller de Programación 1 de la carrera Analista Universitario en Sistemas del instituto Politécnico Superior San Martín. 
+
+
+## División del código:
+
+Cada ejercicio está dividido en sus carpetas dependiendo del tema y dentro de cada tema están los niveles y dentro los ejercicios.
+
+Para acceder a ellos creé un menú de consola en el que podes ir accediendo a cada ejercicio sin tener que compilar todo nuevamente. 
+
+Los ejercicios son los que estan a continuación.
+
+## Herramientas
+
+Para hacer todo, estoy usando [Replit](https://replit.com) que me permite escribir y ejecutar el código en el navegador. 
+
+## Ejecución
+
+Podés clonar el repositorio y compilarlo con lo que te quede más cómodo. 
+
+En el caso de Linux podés usar:
+
+``` 
+gcc -o main main.c && ./main 
+```
+
+Lo que hace este comando es compilar el archivo main.c en el archivo main y lo ejecuta. 
+
+
+___
+
 
 
 ### MACROS - BATERÍA DE EJERCICIOS:
@@ -69,6 +100,5 @@ Ejemplo n=1, p=4, m=21, debe generarse 1,5,9,13,17,21
 3. Muestre las tablas de multiplicar del 1 al 10.
 4. Muestre los 25 primeros números de la sucesión de Fibonacci.
 5. Permita ingresar una matriz cuadrada 4x4 y luego la muestre por pantalla.
-6. Empleando bucles for anidados intente generar las siguientes salidas por pantalla
+6. Empleando bucles for anidados intente generar las siguientes [salidas por pantalla](https://prnt.sc/12ixin1).
 
-https://prnt.sc/12ixin1

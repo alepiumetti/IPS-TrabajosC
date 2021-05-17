@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX(X,Y,Z) ((X)>(Y) ? ((Z)>(X) ? (Z) : (X)): ((Z)>(Y) ? (Z) : (Y)))
+#define MAXIMO(X,Y,Z) ((X)>(Y) ? ((Z)>(X) ? (Z) : (X)): ((Z)>(Y) ? (Z) : (Y)))
 
 int maximo(void){
 
@@ -11,6 +11,6 @@ int maximo(void){
   scanf("%d",&x);
   scanf("%d",&y);
   scanf("%d",&z);
-  int max = MAX(x,y,z);
+  int max = MAXIMO(x,y,z);
   printf("El máximo es %d.\n",max);
 }

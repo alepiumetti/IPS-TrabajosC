@@ -22,54 +22,9 @@
 #include "../bucles/nivel 1/multiplicacionintervalo.h"
 #include "../bucles/nivel 1/promedio.h"
 #include "../bucles/nivel 1/ingresoasterisco.h"
+#include "../bucles/nivel 2/divisoresDeX.h"
+#include "../bucles/nivel 2/nroPrimo.h"
 
-/*
-
-
-printf("5-Máximo entre 2 números.\n");
-
-printf("8-Numeros pares del 1 al 100.\n");
-
-
-
-
-case 1:
-      (); 
-      break;
-    case 2:
-      break;
-    case 3:
-      (); 
-      break;
-    case 4:
-      
-      break;
-    case 5:
-      nroMax();
-      break;
-    case 6:
-      break;
-    case 7: 
-      
-      break;
-    case 8:
-      
-      break;
-    case 9:
-      
-      break;
-    case 10:
-      
-      break;
-    case 11:
-      break;
-    case 12:
-      promedio();
-      break;
-    case 13:
-      
-      break;
-*/
 
 //declaración de variable global
 
@@ -85,6 +40,7 @@ void menuBucles(void){
   fflush( stdin );
   do{
   system("clear");
+  printf("-Bucles-\n");
   printf("1-Nivel 1\n");
   printf("2-Nivel 2\n");
   printf("3-Nivel 3\n");
@@ -95,7 +51,7 @@ void menuBucles(void){
     case 1:
       system("clear");
       printf("1-Numeros del 100 al 1.\n");
-      printf("2-Números impares del 1 al 100.⚠ Ejercicio faltante\n");
+      printf("2-Números pares del 1 al 100.⚠ Ejercicio faltante\n");
       printf("3-Numeros pares del 1 al 100.\n");
       printf("4-Sumatoria de números impares del 1 al 100.\n");
       printf("5-Sumatoria de números dentro de un intervalo.\n");
@@ -110,12 +66,8 @@ void menuBucles(void){
           descendente1a100();
           continuar();
           break;
-        case 1:
-          ascendentePar();
-          continuar();
-          break;
         case 2:
-          
+          ascendentePar();
           continuar();
           break;
         case 3:
@@ -150,17 +102,21 @@ void menuBucles(void){
       break;
     case 2:
     system("clear");
-    printf("1-.\n");
-    printf("2-.\n");
+    printf("1-Muestre los divisores de un número.\n");
+    printf("2-Número primo.\n");
     printf("3-Volver.\n");
     printf("Ingrese una opción: ");
       scanf("%i",&selector);
-      if(selector==1){
-        
-        continuar();
-      }else if(selector==2){
-        
-        continuar();
+      switch(selector){
+        case 1:
+          divisorDeX();
+          continuar();
+          break;
+        case 2:
+          nroPrimo();
+          continuar();
+        default:
+          break;
       }
       break;
     case 3:
@@ -193,6 +149,7 @@ void menuMacros(){
   fflush( stdin );
   do{
   system("clear");
+  printf("-Macros-\n");
   printf("1-Nivel 1\n");
   printf("2-Nivel 2\n");
   printf("3-Nivel 3\n");
@@ -257,7 +214,7 @@ void menuText(void){
   printf("Menú:\n");
   printf("1-Bucles.\n");
   printf("2-Macros.\n");
-  printf("0-Salir.\n");
+  printf("3-Salir.\n");
 
 }
 
