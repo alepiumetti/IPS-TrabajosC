@@ -24,6 +24,8 @@
 #include "../bucles/nivel 1/ingresoasterisco.h"
 #include "../bucles/nivel 2/divisoresDeX.h"
 #include "../bucles/nivel 2/nroPrimo.h"
+#include "../bucles/nivel 2/100cuadrados.h"
+#include "../bucles/nivel 2/promN.h"
 
 
 //declaración de variable global
@@ -104,7 +106,9 @@ void menuBucles(void){
     system("clear");
     printf("1-Muestre los divisores de un número.\n");
     printf("2-Número primo.\n");
-    printf("3-Volver.\n");
+    printf("3-La suma de los cuadrados de los primero 100 números.\n");
+    printf("4-Promedio de N números.\n");
+    printf("5-Volver.\n");
     printf("Ingrese una opción: ");
       scanf("%i",&selector);
       switch(selector){
@@ -114,6 +118,12 @@ void menuBucles(void){
           break;
         case 2:
           nroPrimo();
+          continuar();
+        case 3:
+          cuadradosEnteros();
+          continuar();
+        case 4:
+          promN();
           continuar();
         default:
           break;
