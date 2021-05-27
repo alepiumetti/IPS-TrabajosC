@@ -15,6 +15,7 @@
 #include "../macros/nivel 3/maximo.h"
 
 //IMPORTACIÓN DE EJERCICIO DE BUCLES
+//NIVEL 1
 #include "../bucles/nivel 1/for1a100.h"
 #include "../bucles/nivel 1/for1a100par.h"
 #include "../bucles/nivel 1/suma1a100impar.h"
@@ -22,10 +23,17 @@
 #include "../bucles/nivel 1/multiplicacionintervalo.h"
 #include "../bucles/nivel 1/promedio.h"
 #include "../bucles/nivel 1/ingresoasterisco.h"
+//NIVEL 2
 #include "../bucles/nivel 2/divisoresDeX.h"
 #include "../bucles/nivel 2/nroPrimo.h"
 #include "../bucles/nivel 2/100cuadrados.h"
 #include "../bucles/nivel 2/promN.h"
+#include "../bucles/nivel 2/tresNros.h"
+//NIVEL 3
+#include "../bucles/nivel 3/abecedario.h"
+#include "../bucles/nivel 3/factorial.h"
+#include "../bucles/nivel 3/fibonacci.h"
+
 
 
 //declaración de variable global
@@ -103,44 +111,58 @@ void menuBucles(void){
 
       break;
     case 2:
-    system("clear");
-    printf("1-Muestre los divisores de un número.\n");
-    printf("2-Número primo.\n");
-    printf("3-La suma de los cuadrados de los primero 100 números.\n");
-    printf("4-Promedio de N números.\n");
-    printf("5-Volver.\n");
-    printf("Ingrese una opción: ");
+      system("clear");
+      printf("1-Muestre los divisores de un número.\n");
+      printf("2-Número primo.\n");
+      printf("3-La suma de los cuadrados de los primero 100 números.\n");
+      printf("4-Promedio de N números.\n");
+      printf("5-Tres nros enteros (k=n+nro*p)\n");
+      printf("6-Volver.\n");
+      printf("Ingrese una opción: ");
+        scanf("%i",&selector);
+        switch(selector){
+          case 1:
+            divisorDeX();
+            continuar();
+            break;
+          case 2:
+            nroPrimo();
+            continuar();
+          case 3:
+            cuadradosEnteros();
+            continuar();
+          case 4:
+            promN();
+            continuar();
+          case 5:
+            tresNros();
+            continuar();
+          default:
+            break;
+        }
+        break;
+    case 3:
+      printf("1-Abecedario.\n");
+      printf("2-Factorial de un número.\n");
+      printf("3-Primeros 25 nros de Fibonacci");
+      printf("4-Volver.\n");
+      printf("Ingrese una opción: ");
       scanf("%i",&selector);
       switch(selector){
         case 1:
-          divisorDeX();
+          abecedario();
           continuar();
           break;
         case 2:
-          nroPrimo();
+          factorial();
           continuar();
-        case 3:
-          cuadradosEnteros();
+          break;
+        case 3: 
+          fibonacci();
           continuar();
-        case 4:
-          promN();
-          continuar();
+          break;
         default:
           break;
-      }
-      break;
-    case 3:
-      printf("1-.\n");
-      printf("2-.\n");
-      printf("3-Volver.\n");
-      printf("Ingrese una opción: ");
-      scanf("%i",&selector);
-      if(selector==1){
-        
-        continuar();
-      }else if(selector==2){
-        
-        continuar();
       }
       break;
     case 4:
@@ -184,20 +206,20 @@ void menuMacros(){
 
       break;
     case 2:
-    system("clear");
-    printf("1-Consecutivo entre 2 números.\n");
-    printf("2-Número entre 0 y 100.\n");
-    printf("3-Volver.\n");
-    printf("Ingrese una opción: ");
-      scanf("%i",&selector);
-      if(selector==1){
-        consecutivo();
-        continuar();
-      }else if(selector==2){
-        entre0_100();
-        continuar();
-      }
-      break;
+      system("clear");
+      printf("1-Consecutivo entre 2 números.\n");
+      printf("2-Número entre 0 y 100.\n");
+      printf("3-Volver.\n");
+      printf("Ingrese una opción: ");
+        scanf("%i",&selector);
+        if(selector==1){
+          consecutivo();
+          continuar();
+        }else if(selector==2){
+          entre0_100();
+          continuar();
+        }
+        break;
     case 3:
       system("clear");
       printf("1-Máximo entre 3 números.\n");
