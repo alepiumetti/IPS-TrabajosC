@@ -33,6 +33,8 @@
 #include "../bucles/nivel 3/abecedario.h"
 #include "../bucles/nivel 3/factorial.h"
 #include "../bucles/nivel 3/fibonacci.h"
+#include "../bucles/nivel 3/matriz.h"
+#include "../bucles/nivel 3/imagenes.h"
 
 
 
@@ -144,8 +146,10 @@ void menuBucles(void){
     case 3:
       printf("1-Abecedario.\n");
       printf("2-Factorial de un número.\n");
-      printf("3-Primeros 25 nros de Fibonacci");
-      printf("4-Volver.\n");
+      printf("3-Primeros 25 nros de Fibonacci\n");
+      printf("4- Matriz 4x4.\n");
+      printf("5- Patrones de caracteres.\n");
+      printf("6- Volver");
       printf("Ingrese una opción: ");
       scanf("%i",&selector);
       switch(selector){
@@ -159,6 +163,14 @@ void menuBucles(void){
           break;
         case 3: 
           fibonacci();
+          continuar();
+          break;
+        case 4:
+          matriz();
+          continuar();
+          break;
+        case 5:
+          imagenes();
           continuar();
           break;
         default:
